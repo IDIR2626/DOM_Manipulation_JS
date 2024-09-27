@@ -1,12 +1,15 @@
-//const { JSDOM } = require('jsdom');
+
+/* 
+const { JSDOM } = require('jsdom');
 
 //Create a new JSDOM instance
-//const dom = new JSDOM(`<!DOCTYPE html><html><body><h1 id="main_header">Hello World</h1></body></html>`);
+const dom = new JSDOM(`<!DOCTYPE html><html><body><h1 id="main_header">Hello World</h1></body></html>`);
 
 // Get the document from the JSDOM instance
-//const document = dom.window.document;
+const document = dom.window.document;
 
-// DOM manipulation
+*/
+/*-----------------------------------------------------------SELECTING ELEMENT IN THE DOM-------------------------------------------------------------------------------*/
 
 // Get element by id
 const mainHeader = document.getElementById('main_header');
@@ -31,7 +34,7 @@ console.log(allDivsInMyCode);
 
 
 mainHeader.style.color = 'red';
-console.log(`tehe type of ${mainHeader} is ` + typeof mainHeader);
+console.log(`the type of ${mainHeader} is ` + typeof mainHeader);
 
 
 
@@ -40,3 +43,22 @@ for (let i = 0; i <listItems.length; i++){
     listItems[i].style.fontWeight = 'bold';
     listItems[i].style.color = 'blue';
 }
+
+/*-----------------------------------------------------------CREATING ELEMENT IN THE DOM-------------------------------------------------------------------------------*/
+
+const ul = document.querySelector('ul');
+const li = document.createElement('li');
+
+li.textContent = 'Item 6';
+//li.className = 'list_item'; 
+li.setAttribute ('class',  'list_item');
+li.style.color = 'green';
+li.style.fontWeight = 'bold';
+
+
+
+ul.appendChild(li); 
+
+
+
+
