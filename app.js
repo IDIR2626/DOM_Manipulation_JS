@@ -73,9 +73,11 @@ ul.appendChild(li);
 
 /*------------------------------------------------------------TRAVESING THE DOM TREE----------------------------------------------------------------------------------*/
 
+/*
+
 let ul = document.querySelector('ul');
 console.log(ul);
-/*
+
 // get the parent of the ul element, we have two ways to do that 
 // 1- using parentNode property
 console.log(ul.parentNode);
@@ -83,7 +85,7 @@ console.log(ul.parentNode);
 console.log(ul.parentElement);
 // the diffrence between parentNode and parentElement is that parentNode can return any node type while parentElement returns only elements
 
-*/
+
 
 let html = document.documentElement; // this returns the entire html document
 console.log(html); 
@@ -107,4 +109,11 @@ console.log(ul.nextSibling);
 
 console.log(ul.previousElementSibling); // h1 element because it is the previous sibling of the ul element
 console.log(ul.nextElementSibling); // nuul because there is no next sibling for the ul element
+
+
+*/
+
+
+
+
 

@@ -1,0 +1,52 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(darkblue, gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container {
+    margin: 1 auto;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    flex-direction: row;
+    width: 50%;
+    padding: 20px;
+}
+
+.box {
+    padding: 20px;
+    border: 2px solid white;
+    position : relative;
+    border-radius: 10px;
+    height: 450px;
+    margin: 0 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#box_title {
+    color: white;
+    stroke-width: bold;
+    text-align: center;
+}
+
+.box button {
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+}
